@@ -1,0 +1,35 @@
+body{
+    background-image:url("billeder/baggrund.png") ;
+    color:#1e73be
+    ;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav ul {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+gap: 30px;
+  
+
+}
+
+li {
+        list-style-type:none;   /* fjerner prikken */  
+    }
+
+.hero__image{ /*W3 school Hero */
+    background-image:url(billeder/hero_image.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 300px;
+    padding-top: 300px;
+    border-top: #ffe802;
+    
+}
