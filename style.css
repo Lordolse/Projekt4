@@ -31,6 +31,8 @@ li {
     padding-bottom: 300px;
     padding-top: 300px;
     border-top: #ffe802;
+        padding-right: 50px;
+    padding-left: 50px;
     
 }
 
@@ -41,6 +43,7 @@ font-size: 66px;
 border-top: solid 10px;
 border-color: #ffe802; /* w3 school*/
 margin-left:30px;
+margin-right: 30px;
 color:#ffe802;
 padding: 0;
 }
@@ -51,14 +54,39 @@ padding: 0;
     font-size: 48px;
     font-weight: lighter;
     margin-left:30px;
+    margin-right:30px;
     padding:0;
     color:#ffe802;
+}
+
+.main__section__fordele{
+    display: flex;
+    font-size: 48px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color:#ffe802;
+    }
+
+.main__section__tekst{
+    font-size: 28px;
+    color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.main__section__kontakt{
+    display: flex;
+    font-size: 48px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color:#ffe802;
+    
 }
 
 
 .footer__container{
    display: flex;
-   background-color: #ffe802;
+   background-color: #1e73be;
    font-size: 50px;
    padding: 0;
    margin: 0;
