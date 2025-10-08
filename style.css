@@ -34,10 +34,11 @@ li {
     
 }
 
-.main{
-    color:white;
-}
-.headline{
-font-size: 100px;
 
+.headline{
+font-size: 66px;
+border-top: solid 10px;
+border-color: #ffe802; /* w3 school*/
+margin:30px;
+color:#ffe802;
 }
