@@ -1,7 +1,7 @@
 body{
     background-image:url("billeder/baggrund.png") ;
-    color:#1e73be
-    ;
+    color:#1e73be;
+    
 }
 
 .nav{
@@ -10,10 +10,10 @@ body{
     flex-wrap: wrap;
 }
 .nav ul {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
   
 
 }
@@ -93,7 +93,7 @@ li {
    background-color: #1e73be;
    color: #ffffff;
    font-size: 20px;
-padding: 0px 50px;
+   padding: 0px 50px;
    
 }
 
