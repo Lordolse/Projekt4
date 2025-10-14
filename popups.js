@@ -10,7 +10,7 @@ const felter = [
     const bg = Object.assign(document.createElement('div'), { style: 'position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;' });
     const box = Object.assign(document.createElement('div'), { style: 'background:#fff;padding:20px;border-radius:10px;width:300px;position:relative;' });
     const form = document.createElement('form');
-    form.innerHTML = "<h2>Tilmeld</h2>";
+    form.innerHTML = "<h2>Tilmeld dig vores nyhedsbrev</h2>";
   
     // Loop: inputfelter 
     felter.forEach(f => {
