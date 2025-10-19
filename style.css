@@ -30,14 +30,98 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* Hover-effekt */
+.nav a:hover {
+  color: #ffe802;                 /* gult highlight som dine overskrifter */
+}
+
 .nav ul {
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
-gap: 30px;
+gap: 30px;}
   
-
+/* Fjerner standard-link-styling */
+.nav a {
+  text-decoration: none;          /* fjerner stregen */
+  color: #1e73be;                 /* samme farve som logoet */
+  font-family: inherit;           /* arver resten af sidens font */
+  font-weight: 500;               /* let fremhævet, men stadig roligt */
+  font-size: 20px;                /* juster efter behov */
+  transition: color 0.2s ease;
 }
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(100%) saturate(3142%) hue-rotate(190deg) brightness(92%) contrast(88%);
+}
+
+.icon-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(81%) saturate(1200%) hue-rotate(10deg) brightness(105%) contrast(95%);
+}
+
+/* overlay søge funktion */
+.search { 
+  position: fixed; 
+  inset: 0; 
+  background: rgba(0,0,0,.5); 
+  display: grid; 
+  place-items: start center; 
+  padding-top: 10vh; }
+.search[hidden] { 
+  display: none; }
+.search__panel { width: min(800px, 90vw); 
+  background:#111; 
+  border:1px solid #2a2a2a; 
+  border-radius: 12px; 
+  padding: 1rem; 
+  color:#fff; }
+.search__row { 
+  display: grid; 
+  grid-template-columns: 1fr auto; 
+  gap:.5rem; }
+.search__row input { 
+  width:100%; 
+  padding:.75rem 1rem; 
+  border-radius:.6rem; 
+  border:1px solid #333; 
+  background:#0f0f0f; 
+  color:#fff; }
+.search__row button { 
+  background:#222; 
+  border:1px solid #333; 
+  color:#fff; 
+  padding:.6rem .9rem; 
+  border-radius:.6rem; 
+  cursor:pointer; }
+.results { 
+  list-style:none; 
+  margin: .75rem 0 0; 
+  padding:0; 
+  display:grid; 
+  gap:.5rem; }
+.results li { 
+  padding:.6rem .8rem; 
+  border:1px solid #222; 
+  border-radius:.5rem; 
+  background:#151515; }
+.results a { 
+  color:#fff; 
+  text-decoration:none; }
+  /* overlay søge funktion slut */
 
 li {
         list-style-type:none;   /* fjerner prikken */  
@@ -178,3 +262,28 @@ li {
   padding: 12px 0;
   font-size: 14px;
 }
+
+
+/* Under-construction sektion til søgning*/
+.oops {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-inline: var(--gutter);
+}
+
+.oops__title {
+  color: #ffe802;
+  font-size: clamp(28px, 5vw, 64px);
+  margin: 0 0 .5rem 0;
+  line-height: 1.1;
+}
+
+.oops__text {
+  color: #ffffff;
+  font-size: clamp(16px, 2.4vw, 22px);
+  margin: 0;
+  opacity: .9;
+}
+/* Under-construction sektion til søgning slut*/
