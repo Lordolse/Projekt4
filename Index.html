@@ -65,6 +65,19 @@
 
 </main>
 
+ <!-- Nyhedsbrev-knap -->
+<button id="openNewsletterBtn">Nyhedsbrev</button>
+
+<!-- Nyhedsbrev-popup (skjult til at starte med) -->
+<div id="nyhedsbrev" class="hidden">
+  <h3>Tilmeld dig vores nyhedsbrev</h3>
+  <input type="text" id="navn" placeholder="Dit navn">
+  <input type="email" id="email" placeholder="Din e-mail">
+  <button id="tilmeldBtn">Tilmeld</button>
+  <p id="besked"></p>
+  <button id="lukBtn">Luk</button>
+</div>
+
 <footer>
         <div class="footer__container">
             <img src="billeder/hvid logo.png" alt="Social fondens logo"width="200px" height="200px">
@@ -75,10 +88,12 @@
             <p>Nyttige links</p>
             <p>Nyhedsbrev</p>
             </div>
+
         <div class="footer__copyright">
             <p>Copyright fonden for socialt ansvar. 2025</p>
         </div>
 </footer>
 
+<script src="nyhedsbrev.js"></script>
 </body>
 </html>

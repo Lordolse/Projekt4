@@ -112,3 +112,50 @@ li {
     background-color: #1093ED;
     color: #ffffff;
 }
+
+/* Nyhedsbrev popup */
+.hidden {
+  display: none;
+}
+
+#nyhedsbrev {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #1e73be;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 300px;
+  z-index: 1000;
+}
+
+#nyhedsbrev input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+}
+
+#nyhedsbrev button {
+  background-color: #ffe802;
+  border: none;
+  color: #1e73be;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#openNewsletterBtn {
+  background-color: #ffe802;
+  color: #1e73be;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
