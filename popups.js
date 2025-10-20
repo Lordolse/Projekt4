@@ -1,40 +1,23 @@
-// Variabler + Array af objekter 
-const felter = [
-    { label: "Navn", type: "text" },
-    { label: "Email", type: "email" }
-  ];
+const msgs = [
+  { t: "Tilmeld dig", x: "De Unge Ravne" }, // overskrift
   
-  // Funktion der laver popup 
-  function popup() {
-    // DOM-manipulation + Objekter 
-    const bg = Object.assign(document.createElement('div'), { style: 'position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;' });
-    const box = Object.assign(document.createElement('div'), { style: 'background:#fff;padding:20px;border-radius:10px;width:300px;position:relative;' });
-    const form = document.createElement('form');
-    form.innerHTML = "<h2>Tilmeld dig vores nyhedsbrev</h2>";
-  
-    // Loop: inputfelter 
-    felter.forEach(f => {
-      form.innerHTML += `<label>${f.label}:</label><input type="${f.type}" required style="width:100%;margin:5px 0;padding:5px"><br>`;
-    });
-  
-    // Luk knap 
-    const luk = Object.assign(document.createElement('button'), { innerText:'X', style:'position:absolute;top:5px;right:5px;background:red;color:#fff;border:none;cursor:pointer;' });
-    luk.onclick = () => document.body.removeChild(bg);
-  
-    // If/else + operatorer
-    form.onsubmit = e => {
-      e.preventDefault();
-      const navn = form[0].value, email = form[1].value;
-      if (!navn || !email) alert("Udfyld alle felter!");
-      else if (!email.includes("@")) alert("Ugyldig email!");
-      else { alert(`Tak ${navn}, vi sender til ${email}`); document.body.removeChild(bg); } // $ bruges til at indsætte værdier fra variabler direkte i en tekststreng.
-    };
-  
-    // Saml og vis popup 
-    box.append(luk, form);// Tilføjer "luk"knappen og formularen inde i selve popup-boksen
-    bg.appendChild(box); // Lægger popup-boksen ovenpå den mørke baggrund
-    document.body.appendChild(bg);// Viser hele popup’en (baggrund + boks + indhold) på siden
-  }
-  
-  // Pop'uppen vises først når HTML er færdigindlæst
-  document.addEventListener('DOMContentLoaded', popup); 
+];
+const popupboks=document.createElement("div");  // laver en variabel popupboks med et <div> element
+const beholder=document.createElement("div"); // laver endnu et <div>
+const knap=document.createElement("button"); // laver et <button> element 
+popupboks.style="position:fixed;inset:0;background:#f6f6f6;display:flex;align-items:center;justify-content:center";
+beholder.style="background:#FFF;padding:20px;border-radius:12px;text-align:center;font-family:sans-serif"; //CSS 
+msgs.forEach(m=>{
+  if(m&&m.t&&m.x){ // tjekker om objektet (m) har titel (t) og en tekst (x)
+      const h=document.createElement("h2"); // laver en overskrift
+      const t =document.createElement("beholder"); // laver et afsnit <p> til pop'upen
+      h.textContent=m.t; // sætter  tekstindholdet ind fra objektet 
+      t.textContent=m.x;
+      beholder.append(h,t) // smider dem ind i pop-up boksen (beholder)
+  }else console.warn("Fejl")
+});
+knap.textContent="Luk"; // giver knappen teksten ''luk'' 
+knap.onclick=()=>popupboks.remove(); // når man klikker, fjernes pop'upen (popupboks)
+beholder.appendChild(knap); //sætter knappen ind i boksen 
+popupboks.appendChild(beholder); // lægger boksen ind i overlayet 
+document.body.appendChild(popupboks); // sætter hele pop'upen ind i siden, så man kan se den  
