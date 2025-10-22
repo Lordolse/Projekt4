@@ -159,7 +159,11 @@ li {
   margin-right: 30px;
   color:#ffe802;
   padding: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
 }
+
 
 .overskrift__tekst{
   font-size: 48px;
@@ -168,6 +172,22 @@ li {
   margin-right:30px;
   padding:0;
   color:#ffe802;
+}
+
+/* --- Frivillig knap --- */
+.frivillig-knap {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-image: url("billeder/defaultknap.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+
+.frivillig-knap:hover {
+  background-image: url("billeder/hoverknap.png");
 }
 
 .main__section__fordele{
