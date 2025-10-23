@@ -15,7 +15,7 @@ let followList = [];
 for (let i = 0; i < picSlide.length; i++) {
   let person = picSlide[i];
 
-  let html = /*Hjælp fra Chat GPT*/
+  let html = /*Hjælp fra Chat GPT*/ /*kodeblok */
     '<div class="product-card">' + 
     '<div class="product-image">' +
     '<img src="' + person.billede + '" alt="' + person.navn + '" class="product-thumb">' +
@@ -26,7 +26,7 @@ for (let i = 0; i < picSlide.length; i++) {
         '<p class="product-short-description">' + person.titel + '</p>' +
       '</div>' +
     '</div>';
-kodeblok
+
   container.innerHTML += html;
 }
 
