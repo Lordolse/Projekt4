@@ -44,6 +44,4 @@ tilmeldBtn.addEventListener("click", function() {
   /* Nulstil felter */
   document.getElementById("navn").value = "";
   document.getElementById("email").value = "";
-
-  rydFelter ();
 });
