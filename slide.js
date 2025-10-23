@@ -26,7 +26,7 @@ for (let i = 0; i < picSlide.length; i++) {
         '<p class="product-short-description">' + person.titel + '</p>' +
       '</div>' +
     '</div>';
-
+kodeblok
   container.innerHTML += html;
 }
 
