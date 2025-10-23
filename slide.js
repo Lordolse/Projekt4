@@ -1,6 +1,6 @@
 
 
-console.log("JS kører"); /*Hjælp fra Chat GPT*/
+console.log("JS kører"); 
 
 let picSlide = [
   { navn: "Asta Jensen", titel: "Odense", billede: "billeder/img1.png" },
@@ -15,7 +15,7 @@ let followList = [];
 for (let i = 0; i < picSlide.length; i++) {
   let person = picSlide[i];
 
-  let html = 
+  let html = /*Hjælp fra Chat GPT*/
     '<div class="product-card">' + 
     '<div class="product-image">' +
     '<img src="' + person.billede + '" alt="' + person.navn + '" class="product-thumb">' +
@@ -30,7 +30,7 @@ for (let i = 0; i < picSlide.length; i++) {
   container.innerHTML += html;
 }
 
-// Funktion til følg-knappen
+// Funktion til følg-knappen / ekstra array
 function followButton(index) {
   let person = picSlide[index];
 
