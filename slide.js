@@ -3,11 +3,11 @@
 console.log("JS kører"); 
 
 let picSlide = [
-  { navn: "Asta Jensen", titel: "Odense", billede: "billeder/img1.png" },
-  { navn: "Oskar Petersen", titel: "København", billede: "billeder/img2.png" },
-  { navn: "Mathilde Alison", titel: "Århus", billede: "billeder/img3.png" },
-  { navn: "Malte Skov", titel: "Odense", billede: "billeder/img4.png" },
-  { navn: "Jessica Mogensen", titel: "Odense", billede: "billeder/img1.png" }
+  { navn: "Asta Jensen", titel: "Odense", billede: "billeder/img1.jpg" },
+  { navn: "Oskar Petersen", titel: "København", billede: "billeder/img2.jpg" },
+  { navn: "Mathilde Alison", titel: "Århus", billede: "billeder/img3.jpg" },
+  { navn: "Malte Skov", titel: "Odense", billede: "billeder/img4.jpg" },
+  { navn: "Jessica Mogensen", titel: "Odense", billede: "billeder/img1.jpg" }
 ];
 
 let container = document.getElementById("container");
