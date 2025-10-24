@@ -6,7 +6,8 @@ let picSlide = [
   { navn: "Asta Jensen", titel: "Odense", billede: "billeder/img1.png" },
   { navn: "Oskar Petersen", titel: "København", billede: "billeder/img2.png" },
   { navn: "Mathilde Alison", titel: "Århus", billede: "billeder/img3.png" },
-  { navn: "Malte Skov", titel: "Odense", billede: "billeder/img4.png" }
+  { navn: "Malte Skov", titel: "Odense", billede: "billeder/img4.png" },
+  { navn: "Jessica Mogensen", titel: "Odense", billede: "billeder/img1.png" }
 ];
 
 let container = document.getElementById("container");
@@ -15,10 +16,10 @@ let followList = [];
 for (let i = 0; i < picSlide.length; i++) {
   let person = picSlide[i];
 
-  let html = /*Hjælp fra Chat GPT*/ /*kodeblok */
+  let html = /*Hjælp fra Chat GPT*/ /*kodeblok */ 
     '<div class="product-card">' + 
     '<div class="product-image">' +
-    '<img src="' + person.billede + '" alt="' + person.navn + '" class="product-thumb">' +
+    '<img src="' + person.billede + '" alt="' + person.navn + '" class="product-pic">' +
     '</div>' +
     '<button class="card-btn" onclick="followButton(' + i + ')">Følg</button>' +
     '<div class="product-info">' +
