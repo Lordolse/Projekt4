@@ -9,9 +9,9 @@
 </head>
 <body>
 <header>
-<div class="header__container">
+  <div class="header__container">
     <nav class="nav">
-      <img src="billeder/fslogo.png" alt="Socialfondens logo" width="200" height="200">
+      <img src="billeder/fslogo.svg" alt="Socialfondens logo" width="200" height="200">
       <ul>
         <li><a href="#">Vores arbejde</a></li>
         <li><a href="#">Indsatser</a></li>
@@ -19,9 +19,9 @@
         <li><a href="#">Resultater</a></li>
         <li><a href="#">Samarbejde</a></li>
         <li>
-          <button class="icon-btn js-searchToggle" aria-label="Åbn søgning">
+        <button class="icon-btn js-searchToggle" aria-label="Åbn søgning">
             <img src="billeder/svgexport-3.svg" alt="">
-          </button>
+        </button>
         </li>
       </ul>
     </nav>
@@ -45,17 +45,32 @@
     </section>
   </main>
 
-<footer>
-        <div class="footer__container">
-            <img src="billeder/hvid logo.png" alt="Social fondens logo"width="200px" height="200px">
 
+  <!--Nyhedsbrev-knap-->
+
+<button id="openNewsletterBtn">Nyhedsbrev</button>
+
+ <!-- Nyhedsbrev-popup (skjult til at starte med) -->
+<div id="nyhedsbrev" class="hidden">
+  <h3>Tilmeld dig vores nyhedsbrev</h3>
+  <input type="text" id="navn" placeholder="Dit navn">
+  <input type="email" id="email" placeholder="Din e-mail">
+  <button id="tilmeldBtn">Tilmeld</button>
+  <p id="besked"></p>
+  <button id="lukBtn">Luk</button>
+</div>
+
+
+<footer>
+    <div class="footer__container">
+        <img src="billeder/hvidlogo.png" alt="Social fondens logo" width="200" height="200">
             <p class="footer__container__tekst"></p>
             <p>Frivillig</p>
             <p>Organisationen</p>
             <p>Nyttige links</p>
             <p>Nyhedsbrev</p>
             </div>
-        <div class="footer__copyright">
+      <div class="footer__copyright">
             <p>Copyright fonden for socialt ansvar. 2025</p>
         </div>
 </footer>
